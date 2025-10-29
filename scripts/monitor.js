@@ -1,5 +1,5 @@
 /**
-<<<<<<< HEAD
+
  * System Monitoring Script - Production
  * Monitors application health and performance
  */
@@ -27,10 +27,7 @@ function checkSystemHealth() {
   console.log('✓ Disk space: Adequate');
   
   console.log('System Status: HEALTHY');
-=======
- * System Monitoring Script - Development
- * Enhanced monitoring with debug features
- */
+
 
 const monitorConfig = {
   interval: 5000, // 5 seconds (faster for development)
@@ -84,17 +81,17 @@ function checkSystemHealth() {
   if (monitorConfig.verboseLogging) {
     console.log(`Next check in ${monitorConfig.interval}ms`);
   }
->>>>>>> dev
+ 
 }
 
 // Start monitoring
 console.log(`Monitoring every ${monitorConfig.interval}ms`);
-<<<<<<< HEAD
+
 setInterval(checkSystemHealth, monitorConfig.interval);
 
 // Run first check immediately
 checkSystemHealth();
-=======
+
 console.log('Debug features enabled');
 setInterval(checkSystemHealth, monitorConfig.interval);
 
@@ -110,4 +107,4 @@ if (monitorConfig.debugMode) {
     console.log(`Heap Used: ${(memUsage.heapUsed / 1024 / 1024).toFixed(2)} MB`);
   }, 30000);
 }
->>>>>>> dev
+}
